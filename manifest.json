@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "Return YouTube Subscribers",
+    "version": "1.0",
+    "description": "Fixes YouTube's Subscriber Counts On Channel/Video Pages.",
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://www.youtube.com/*"
+            ],
+            "js": [
+                "main.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "storage",
+        "activeTab",
+        "declarativeContent",
+        "webRequest",
+        "webRequestBlocking",
+        "webNavigation",
+        "https://mixerno.space/api/youtube-channel-counter/user/*"
+    ]
+}
