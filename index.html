@@ -8,6 +8,7 @@
     <meta name="description" content="Bring Back YouTube's Subscriber Counts">
     <meta name="author" content="Straight From MG">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script id="dsq-count-scr" src="//mgcounts.disqus.com/count.js" async></script>
     <style>
         body {
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -73,7 +74,8 @@
                     <h2>Firefox Download</h2>
                 </div>
             </a>
-            <a href="https://chrome.google.com/webstore/detail/return-youtube-subscriber/ojecnnfmjkfobkhghilomnfihgonkjdm">
+            <a
+                href="https://chrome.google.com/webstore/detail/return-youtube-subscriber/ojecnnfmjkfobkhghilomnfihgonkjdm">
                 <div style="padding-top: 5px;">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
                         <path
@@ -100,7 +102,8 @@
                     <h2>Safari Download (Coming Soon)</h2>
                 </div>
             </a>
-            <a href="https://chrome.google.com/webstore/detail/return-youtube-subscriber/ojecnnfmjkfobkhghilomnfihgonkjdm">
+            <a
+                href="https://chrome.google.com/webstore/detail/return-youtube-subscriber/ojecnnfmjkfobkhghilomnfihgonkjdm">
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path
@@ -109,7 +112,8 @@
                     <h2>Edge Download</h2>
                 </div>
             </a>
-            <a href="https://raw.githubusercontent.com/returnyoutubesubscribers/returnyoutubesubscribers.github.io/main/userscript.js">
+            <a
+                href="https://raw.githubusercontent.com/returnyoutubesubscribers/returnyoutubesubscribers.github.io/main/userscript.js">
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                         <path
@@ -127,6 +131,19 @@
         </a>
     </div>
     <br>
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = "https://returnyoutubesubscribers.github.io/";
+            this.page.identifier = "https://returnyoutubesubscribers.github.io/";
+        };
+        (function () {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://MGCounts.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
 </body>
 
 </html>
